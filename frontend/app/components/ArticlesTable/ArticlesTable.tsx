@@ -57,7 +57,7 @@ const ArticlesTable: React.FC = () => {
         className="btn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mb-4"
         onClick={openModal}
       >
-        Add Article
+        Agregar
       </button>
       <AddArticleModal
         isOpen={isModalOpen}
@@ -67,11 +67,11 @@ const ArticlesTable: React.FC = () => {
       <table className="table-auto w-full mt-4">
         <thead>
           <tr className="bg-gray-200">
-            <th>Title</th>
-            <th>Content</th>
-            <th>Publication Date</th>
-            <th>Author</th>
-            <th>Actions</th>
+            <th>Titulo</th>
+            <th>Contenido</th>
+            <th>Fecha de publicación</th>
+            <th>Autor</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -86,13 +86,13 @@ const ArticlesTable: React.FC = () => {
                   className="bg-red-500 text-white p-2 rounded"
                   onClick={() => deleteArticle(article.id)}
                 >
-                  Delete
+                  Eliminar
                 </button>
                 <button
                   className="bg-green-500 text-white p-2 rounded ml-2"
                   onClick={() => openEditModal(article)}
                 >
-                  Edit
+                  Editar
                 </button>
               </td>
             </tr>

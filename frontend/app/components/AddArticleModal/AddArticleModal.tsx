@@ -59,19 +59,19 @@ export const AddArticleModal: React.FC<AddArticleModalProps> = ({
       <div className="relative top-20 mx-auto p-5 border w-96 shadow-lg rounded-md bg-white">
         <div className="mt-3 text-center">
           <h3 className="text-lg leading-6 font-medium text-gray-900">
-            Add New Article
+            Agregar nuevo
           </h3>
           <div className="mt-2 px-7 py-3">
             <form onSubmit={handleSubmit} className="space-y-4">
               <input
                 type="text"
-                placeholder="Title"
+                placeholder="Titulo"
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
               />
               <textarea
-                placeholder="Content"
+                placeholder="Cotenido"
                 value={content}
                 onChange={(e) => setContent(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
@@ -84,7 +84,7 @@ export const AddArticleModal: React.FC<AddArticleModalProps> = ({
               />
               <input
                 type="text"
-                placeholder="Author"
+                placeholder="Autor"
                 value={author}
                 onChange={(e) => setAuthor(e.target.value)}
                 className="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
